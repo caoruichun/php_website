@@ -1,0 +1,27 @@
+1.5个栏目,每个栏目都能发文章
+2.页面样式
+3.功能分析 有id,栏目名,文章表
+4:数据库
+ create database ndac charset utf8;
+
+ #文章表
+ create table art(
+ id int primary key auto_increment,
+ catid int,/*栏目属性*/
+ title varchar(30),
+ content varchar(2000),
+ pubtime int
+ )charset utf8;
+
+
+ #栏目表
+ create table category(
+ id int primary key auto_increment,
+ catname varchar(20)
+ )charset utf8;
+
+ insert into category(catname) values ('新闻信息'),
+ ('会议信息'),
+ ('资料下载'),
+ ('往届回顾'),
+ ('会议主题');

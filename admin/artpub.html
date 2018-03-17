@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布文章页面</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        label{
+            display:block;
+        }
+        input{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+<h1>发布文章</h1>
+<form action="artpub_ok.php"  method="post">
+    <label for="title">文章标题:</label>
+    <input type="text" name="title" id="title">
+    <label for="catid">所属栏目:</label>
+    <select name="catid" id="catid">
+        <option value="1">新闻信息</option>
+        <option value="2">会议信息</option>
+        <option value="3">资料下载</option>
+        <option value="4">往届回顾</option>
+        <option value="5">会议主题</option>
+    </select>
+    <label for="content">文章内容</label>
+    <textarea id="content" name="content">
+
+    </textarea>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
